@@ -1,5 +1,5 @@
 name =input('please enter your name:')
-fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "orange", "cherry"]
 
 fruits.append('Dragon fruit')
 
