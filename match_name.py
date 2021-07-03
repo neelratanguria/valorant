@@ -2,7 +2,7 @@ name =input('please enter your name:')
 fruits = ["apple", "orange", "cherry"]
 
 fruits.append('Dragon fruit')
-
+#adding a new element
 matched = False
 
 for fruit in fruits:
@@ -17,10 +17,3 @@ else:
 if matched:
     print("yes")
 
-'''
-if name==x[0]:
-    print ("prasun khani master")
-else :
-    print ("bimal is best")
-    '''
-    
