@@ -273,14 +273,68 @@ for xu in fu:
     output =''
     for count in range(xu):
         output += 'x'
-        break
+    
     print(output)
         
 #list
+#to find the max no. in a list
 
 
+numbers=[1,4,6,8,2,9]
+
+max=numbers[0]
+
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+
+
+#2d lists
+
+
+
+matrix =[
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]    
+matrix[0][1]=20
+print (matrix[0][1])
     
+for pp in matrix:
     
+    for item in pp:
+     print (item)
+
+
+#append (to add object)
+#insert (it adds object wherever u want)
+#remove(to remove object)
+#pop (end object is remove)
+#index(to check the existance of object in list)
+#in (same as index but boolean)
+#sort
+#copy(it will be a different list)
+
+
+#to remove deplicates
+
+number =[2,2,4,5,3,4,6,1]
+
+unique =[]
+
+for numbers in number:
+    if numbers not in unique:
+        unique.append(numbers)
+    unique.sort()    
+print(unique)
+
+
+
+
+
+
 
 
 
