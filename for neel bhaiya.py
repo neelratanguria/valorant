@@ -38,16 +38,16 @@ if name in name_allowed[0]:
     command=""
     
     started=False
-    
+    x=13
     while True:
         command = input(">>>  ").lower()
         if command == "start":
              game()
-             
+             x=10
        
         elif command =="try again":
             
-            if not started:
+            if not x>10:
                 
                 game()
             else :
