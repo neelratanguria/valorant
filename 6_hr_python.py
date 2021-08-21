@@ -1,6 +1,6 @@
 """"
 #code 1
-#basics
+#......................................................basics
 
 name = input("what is you name? ")
 print("Hi " +  name)
@@ -12,7 +12,7 @@ print(name + " likes " + color)
 
 """
 #code 2
-#basics
+#..................................................................basics
 
 birth_year = input("birth year ")
 print (type(birth_year))
@@ -24,7 +24,7 @@ print (age)
 """
 #code 3
 
-#string
+#............................................................string
 
 weight_in_pounds = input("enter weight in pounds ")
 
@@ -39,6 +39,7 @@ print("ur wt in kg is " + str(weight_in_kilo))
 """
 """""
 #code 4
+#.....................................................string
 
 first = "john"
 last = "smith"
@@ -53,7 +54,7 @@ print(msg)
 """""""""
  #code 5
  
- #if else
+ #............................................................if else
  
 course = 'python for me'
 print(len(course)) 
@@ -82,6 +83,8 @@ else:
 """""""""
 """""""""
 #code 6
+#..................................................if else exp
+
 is_hot = False
 is_cold = True
 
@@ -117,7 +120,7 @@ if high_income and not good_credit:
 """""""""
  #code 7
  
- #operations
+ #.........................................................operations
  
 temp = 35
 
@@ -156,7 +159,7 @@ else:
     print("name looks good")
     
     
-#not case sensitive
+#.....................................................not case sensitive
 
 wt = int(input("enter your weight  "))
 
@@ -171,7 +174,7 @@ else:
 
 """""""""
 """""""""
-#while loop
+#......................................................while loop
 
 i = 1
 
@@ -197,7 +200,7 @@ else:
 print('thank you playing')    
 
     
-#car game
+#.............................................................car game
 
 command=""
 
@@ -236,8 +239,8 @@ while True:
 print ('thank you for playing')
 
 """""""""
-
-#for loop
+"""""""""
+#.......................................................for loop
 
 for item in ['apple', 'banana', 'mango']:
     print(item)
@@ -254,7 +257,7 @@ for number in price:
 
 print(f"total {total}")
 
-#nested loops
+#......................................................nested loops
 
 for x in range(4):
     for y in range(3):
@@ -265,7 +268,7 @@ numbers=[5,2,5,2,2]
 for x_count in numbers:
     print('x' * x_count)
 
-#another way
+#...........................................................another way
 
 fu=[8,4,8,4,4]
 
@@ -275,8 +278,10 @@ for xu in fu:
         output += 'x'
     
     print(output)
-        
-#list
+"""""""""
+
+"""""""""        
+#.............................................................list
 #to find the max no. in a list
 
 
@@ -314,7 +319,7 @@ for pp in matrix:
 #pop (end object is remove)
 #index(to check the existance of object in list)
 #in (same as index but boolean)
-#sort
+#sort(it will sort)
 #copy(it will be a different list)
 
 
@@ -330,12 +335,153 @@ for numbers in number:
     unique.sort()    
 print(unique)
 
+"""""""""
+"""""""""
+#.............................................................tuples
+#it cant br edit in any way
+
+number = (1,2,3)
+
+print (number[0])
+
+
+coordinates = (1,2,3)
+
+x,y,z = coordinates
+
+print(x)
+
+
+#......................................................dictionaries
+
+customer = {
+    "name": "bimal",
+    "age" : 23 ,
+    "is_verified":True
+    
+    
+}
+
+customer["birthday"] = " nov 10"
+print(customer.get("birthday"))
+
+
+phone=input("phone :  ")
+
+numbers ={
+    "1" : "one",
+    "2" : "two",
+    "3" : "three"
+    }
+
+output =""
+for ch in phone:
+    output += numbers.get(ch,"!") + " "
+    
+"""""""""
+
+
+"""""""""
+#...........................................................define
+
+def notebook_1():
+    print ("for writing")
+    print('bla bla')
+    
+print ("thats how it works")
+notebook_1()
+
+
+def greet_1(name):
+    print (f' hi {name}')
+    print('welcome')
+    
+print ("start")
+greet_1("bimal")
+greet_1("neel bhaiya")
+print("finish")
 
 
 
+def name_1(name, last_name):
+    print (f' hi {name} {last_name} !')
+    print('welcome')
+    
+print ("start")
+name_1("bimal","ray")                         
+name_1(last_name ="neel", name ="bhaiya")   #always use both if notfying positional aruguments
+
+print("finish")
 
 
+def square(number):
+    return number*number
 
+result = square(3)
+print(result)
+#or
+print(square(3))
+"""""""""
+"""""""""
+#..................................................try except
+
+try:
+    age=int(input('age: '))
+    income = 20000
+    risk = income / age
+    print(age)
+except ValueError:
+    print ('no. dena hai re')
+except ZeroDivisionError:
+    print("not divisible")
+"""""""""
+"""""""""
+#...............................................................class
+
+class Point:
+    def move(self):
+        print("move")
+    def draw(self):
+        print("draw")
+        
+point1 = Point()
+point1.move()
+point1.x=10
+print(point1.x)
+
+
+class Person:
+    def __init__(self,name):
+        self.name = name
+    
+    def talk(self):
+        print(f"hi, i am {self.name}")
+        
+john = Person("bimal")
+john.talk()
+
+bob = Person("neel")
+bob.talk()
+
+
+class mammal:
+    def walk():
+        print("walk")
+        
+        
+class dog(mammal):
+    def bark():
+        print("bark")
+
+
+class cat (mammal):
+    pass
+
+dog1=dog.walk()
+dog2= dog.bark()
+print(dog1,dog2)
+
+"""""""""
 
 
 
